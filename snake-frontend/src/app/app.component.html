@@ -1,0 +1,24 @@
+<h1>Snake Game with Rust/Web Assembly!</h1>
+<canvas #gameContent></canvas>
+
+<!-- É possivel criar memoria com o WASM e exportar para o JS e vice-versa -->
+<!-- Numero 1 significa uma pagina de memoria, de 64KB -->
+
+ <!--
+  (module
+    (import "console" "log" (func $logger))
+    (import "console" "error" (func $thrower))
+
+    (memory (import "js" "mem") 1)
+
+    (data (i32.const 0) "Hello, World!")
+
+    (func $sum (param $a i32) (param $b i32) (result i32)
+      call $logger
+      call $thrower
+      (i32.add (local.get $a) (local.get $b) )
+    )
+    (export "sum" (func $sum))
+    ;;(export "mem" (memory 0))
+  )
+-->

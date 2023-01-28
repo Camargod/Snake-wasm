@@ -1,0 +1,5 @@
+
+const CELL_SIZE = 30;
+const GRID_WIDTH = 8;
+const GRID_HEIGHT = 8;
+export {CELL_SIZE, GRID_WIDTH, GRID_HEIGHT}
