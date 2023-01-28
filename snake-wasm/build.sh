@@ -1,0 +1,1 @@
+wasm-pack build --target web --out-name snake_game --out-dir ../snake-frontend/src/assets/wasm
